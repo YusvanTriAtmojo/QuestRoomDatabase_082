@@ -1,7 +1,8 @@
 package com.example.application7.repository
 
 import com.example.application7.data.entity.Mahasiswa
-import java.util.concurrent.Flow
+import kotlinx.coroutines.flow.Flow
+
 
 interface RepositoryMhs {
     suspend fun insertMhs(mahasiswa: Mahasiswa)
