@@ -1,5 +1,6 @@
 package com.example.application7.ui.viewmodel
 
+import com.example.application7.data.entity.Mahasiswa
 
 
 class DetailMhsViewModel(
@@ -22,3 +23,15 @@ data class DetailUiState(
 }
 
 /* Data class untuk menampung data yang akan ditampilkan di UI */
+
+//memindahkan data dari entity ke ui
+fun Mahasiswa.toDetailUiEvent(): MahasiswaEvent {
+    return MahasiswaEvent(
+        nim = nim,
+        nama = nama,
+        jenisKelamin = jenisKelamin,
+        alamat = alamat,
+        kelas = kelas,
+        angkatan = angkatan
+    )
+}
