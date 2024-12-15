@@ -1,9 +1,13 @@
 package com.example.application7.ui.viewmodel
 
+import androidx.lifecycle.SavedStateHandle
 import com.example.application7.data.entity.Mahasiswa
+import com.example.application7.repository.RepositoryMhs
 
 
 class DetailMhsViewModel(
+    savedStateHandle: SavedStateHandle,
+    private val repositoryMhs: RepositoryMhs,
 ) {
 
 }
